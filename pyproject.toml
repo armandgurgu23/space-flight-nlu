@@ -6,8 +6,12 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 requests = "^2.32.3"
+polars = "^1.0.0"
+unstructured = "^0.15.0"
+psutil = "^6.0.0"
+ipython = "^8.26.0"
 
 
 [build-system]
