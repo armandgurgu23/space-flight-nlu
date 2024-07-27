@@ -35,9 +35,9 @@ def extract_element_texts_and_types(url:str):
 if __name__ == "__main__":
     contents = run_sample_request(100, search_term='SpaceX')
     df = pl.DataFrame(contents['results'])
-    # breakpoint()
-    df.with_columns(
-        article_elements=pl.col('url').map_elements(extract_element_texts_and_types)
+    df = df.with_columns(
+        (
+            pl.col('url').map_elements(extract_element_texts_and_types).alias('article_elements')
+        )
     )
-    breakpoint()
 

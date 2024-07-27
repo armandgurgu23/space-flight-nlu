@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
 requests = "^2.32.3"
-polars = "^1.0.0"
+polars = "^1.2.1"
 unstructured = "^0.15.0"
 psutil = "^6.0.0"
 ipython = "^8.26.0"
