@@ -12,6 +12,9 @@ polars = "^1.2.1"
 unstructured = "^0.15.0"
 psutil = "^6.0.0"
 ipython = "^8.26.0"
+pandas = "^2.2.2"
+omegaconf = "^2.3.0"
+pyarrow = "^17.0.0"
 
 
 [build-system]
