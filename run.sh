@@ -1,9 +1,12 @@
 
-dataset="2024-08-05"
-mkdir -p "data/spaceflight_raw_data"
+dataset="2024-12-14"
+output_path="data/spaceflight_raw_data/${dataset}"
+
+mkdir -p $output_path
+
 poetry run python -m src.data_collection.fetch_spaceflight_news \
-    "data/spaceflight_raw_data" \
+    $output_path \
     "src/configs/data_collection/spaceflight_news_baseline.yaml"
 
-poetry run python -m src.data_processing.get_full_article_text \
-    "data/spaceflight_raw_data/${dataset}"
+# poetry run python -m src.data_processing.get_full_article_text \
+#     "data/spaceflight_raw_data/${dataset}"
