@@ -9,12 +9,12 @@ readme = "README.md"
 python = ">=3.11,<3.13"
 requests = "^2.32.3"
 polars = "^1.2.1"
-unstructured = "^0.15.0"
 psutil = "^6.0.0"
 ipython = "^8.26.0"
 pandas = "^2.2.2"
 omegaconf = "^2.3.0"
 pyarrow = "^17.0.0"
+unstructured = {extras = ["all-docs"], version = "^0.16.11"}
 
 
 [build-system]
